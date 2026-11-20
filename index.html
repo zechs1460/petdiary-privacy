@@ -19,14 +19,14 @@
 </head>
 <body>
   <h1>Pet Diary — Privacy Policy</h1>
-  <p class="updated">Last updated: November 18, 2026 · Publisher: JojoStudio Apps</p>
+  <p class="updated">Last updated: November 20, 2026 · Publisher: JojoStudio Apps</p>
 
   <p>Pet Diary (JojoStudio Apps) stores the pet records, photos, feeding/medication/health
   entries you create on your device. If you enable Cloud Backup, that data is synced to our
-  backend (Supabase) tied to your anonymous or email account. We do not sell data, show ads,
-  or collect analytics beyond crash-free operation. Purchases are processed by Google Play and
-  RevenueCat. You can export all your data anytime from Settings → Export My Data, and erase
-  your account and all cloud data anytime from Settings → Delete account. Questions:
+  backend (Supabase) tied to your anonymous or email account. We do not sell your data and we
+  do not show ads. Purchases are processed by Google Play and RevenueCat. You can export all
+  your data anytime from Settings → Export My Data, delete individual entries as you go, and
+  erase everything from Settings → Delete account. Questions:
   <a href="mailto:jojos3dprints@gmail.com">jojos3dprints@gmail.com</a>.</p>
 
   <h2>In short</h2>
@@ -37,14 +37,42 @@
         by row-level security, so only your own account can read them.</li>
     <li><strong>Photos stay on your device.</strong> Backup syncs the text and numbers of your
         entries, not the image files.</li>
-    <li><strong>No ads. No analytics. No selling or sharing of your data.</strong></li>
+    <li><strong>No ads, and no selling or sharing of your data.</strong> We collect no usage
+        analytics, crash logs or diagnostics — the app ships without any analytics or
+        crash-reporting SDK.</li>
+    <li><strong>The one "Analytics" line in our Data safety form.</strong> Play shows Analytics
+        against purchase history because the RevenueCat SDK reports purchase records, which is
+        what makes your subscription and lifetime unlock work. It covers your purchase data
+        only — never how you browse or use the app.</li>
     <li><strong>Payments are handled by Google Play and RevenueCat</strong> — we never see your
         card details.</li>
     <li><strong>Take your data with you:</strong> Settings → Export My Data produces a full JSON
         copy of your diary.</li>
+    <li><strong>Delete a single entry anytime:</strong> removing a pet, medication, feeding
+        schedule, weight or symptom record deletes it from your device and marks it deleted in
+        your backup, so it disappears from every device you sync.</li>
     <li><strong>Delete everything:</strong> Settings → Delete account removes your account and
-        the records stored for it on our servers.</li>
+        deletes the records stored for it on our servers. One record is outside our reach —
+        see <a href="#deletion">What is deleted, and what is kept</a>.</li>
   </ul>
+
+  <h2 id="deletion">What is deleted, and what is kept</h2>
+
+  <p><strong>Individual entries.</strong> A record you delete is taken off your device right
+  away. In your cloud backup the row is kept but stamped as deleted, because that is how backup
+  avoids resurrecting something you removed on another device. Those stamped rows are readable
+  only by your own account, and they are erased for good when you delete your account.</p>
+
+  <p><strong>Deleting your account.</strong> Settings → Delete account performs a real deletion,
+  not a deactivation. It removes your rows from every backup table along with your profile, then
+  deletes the account itself. Nothing is kept and there is no waiting period.</p>
+
+  <p><strong>One record we cannot delete for you.</strong> RevenueCat keeps its own customer and
+  purchase record so your subscription stays verifiable across reinstalls, and the in-app
+  deletion does not reach it. To have that removed as well, email
+  <a href="mailto:jojos3dprints@gmail.com">jojos3dprints@gmail.com</a> and we will delete your
+  RevenueCat customer record on request. Removing it does not cancel anything billed by Google
+  Play — cancel a subscription in Play itself.</p>
 
   <footer>
     This page is the privacy policy for the Android app “Pet Diary: Vet &amp; Med Tracker”
